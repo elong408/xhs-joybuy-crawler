@@ -1,0 +1,11 @@
+node_modules/
+.browser-profile/
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+.idea/
+.joycode/
+output/
+raw_data/
+.claude/settings.local.json

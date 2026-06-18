@@ -1,0 +1,18 @@
+{
+  "keywords": [
+    "joybuy",
+    "Joybuy",
+    "京东 joybuy",
+    "京东国际 joybuy",
+    "JD joybuy"
+  ],
+  "max_notes_per_keyword": 5,
+  "open_detail_top_n": 10,
+  "scroll_rounds": 6,
+  "min_delay_seconds": 3,
+  "max_delay_seconds": 8,
+  "always_wait_for_login": true,
+  "headless": false,
+  "output_dir": "output",
+  "profile_dir": ".browser-profile/xhs"
+}
