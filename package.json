@@ -6,7 +6,8 @@
   "scripts": {
     "install-browser": "npx playwright install chromium",
     "crawl": "node scripts/xhs_joybuy_crawler.mjs",
-    "analyze": "python3 scripts/analyze_joybuy_notes.py"
+    "analyze": "python3 scripts/analyze_joybuy_notes.py",
+    "dashboard": "python3 scripts/build_dashboard.py"
   },
   "dependencies": {
     "playwright": "^1.54.0"

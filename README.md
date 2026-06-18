@@ -105,3 +105,34 @@ output/YYYY-MM-DD/daily_report.html
 4. 关键词是否有足够结果。
 
 如果页面结构变化导致字段缺失，可以保留 `raw_text`，再调整解析规则。
+
+## 用户洞察看板
+
+生成本地 HTML 看板：
+
+```bash
+npm run dashboard
+```
+
+默认读取最新日期目录中的 `output/YYYY-MM-DD/analyzed_notes.csv`；如果没有分析文件，则读取最新日期目录中的 `output/YYYY-MM-DD/raw_notes.csv`。
+
+也可以指定输入文件：
+
+```bash
+python3 scripts/build_dashboard.py output/2026-06-18/analyzed_notes.csv
+```
+
+输出文件：
+
+```text
+dashboard/dashboard_data.json
+dashboard/index.html
+```
+
+直接用浏览器打开 `dashboard/index.html` 即可查看。看板包含：
+
+- 核心指标：内容量、痛点占比、爽点占比、负向占比、总互动分
+- 爽点概览：价格、物流、正品信任、商品体验、购买便利
+- 痛点归类：产品体验、商品质量、物流履约、售后服务、价格促销、品牌信任
+- 体验提升机会：每类痛点对应的原因、代表内容和行动建议
+- 明细表：支持按关键词、痛点分类、情绪筛选
